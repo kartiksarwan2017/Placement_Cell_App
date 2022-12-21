@@ -92,5 +92,5 @@ app.listen(PORT, (err) => {
         console.log(`Error in running server: ${err}`);
         return;
     }
-    console.log(`Server is running on port: ${port}`);
+    console.log(`Server is running on port: ${PORT}`);
 });
