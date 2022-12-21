@@ -1,0 +1,80 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+.profile-container{
+    position: absolute;
+
+    .back-btn{
+       background-color: white;
+       border-radius: 15px;
+        width: 40px;
+        border: none;
+        position: relative;
+        left: 250px;
+        bottom: 70px;
+
+        .fa-circle-arrow-left{
+            color: orangered;
+            position: relative;
+            right: 10px;
+        }
+
+    }
+
+    .fa-circle-arrow-left:hover{
+        color: green;
+    }
+
+    .back-btn:hover{
+        color: green;
+    }
+
+    .card{
+
+        display: inline-block;
+        position: relative;
+        width: 700px;
+        top: 250px;
+        left: 380px;
+        bottom: 500px;
+        border-radius: 12px;
+
+        .card-main{
+
+            height: 240px;
+
+            .profile-img{
+                height: 240px;
+            }
+
+            .card-body{
+
+                position: relative;
+                left: 20px;
+                top: 20px;
+
+                .card-text{
+                    font-size: 20px;
+                    color: blue;
+                }
+            }
+        }
+
+
+        .edit-profile-btn{
+
+            position: relative;
+            left: 450px;
+        }
+
+    }
+}
+
+
+#layout-footer{
+
+    margin-top: -80vh;
+}

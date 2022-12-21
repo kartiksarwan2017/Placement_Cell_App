@@ -1,0 +1,29 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+.students-details-container{
+
+    .table{
+        position: relative;
+        width: 1250px;
+        left: 40px;
+        top: 250px;
+
+        th, td{
+            text-align: center;
+        }
+
+        th{
+            font-size: 18px;
+        }
+
+        td{
+            font-size: 16px;
+        }
+
+    }
+
+}

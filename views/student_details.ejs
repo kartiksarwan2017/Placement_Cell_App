@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="/css/student_details.css">
+
+<% if(locals.user) { %>
+
+<div class="student-details-container">
+
+  <!-- Student Details Container Starts -->
+
+  <h1>Student Details</h1>
+
+  <div class="card border-info mb-3">
+    <div class="card-header bg-transparent border-info">
+      <span>
+        <a href="/student/edit-student/<%= student._id %>">
+          <i class="fa-solid fa-pen-to-square fa-2xl edit-btn"></i>
+        </a>
+      </span>
+    </div>
+    <div class="card-body">
+      <div>
+        <h5 class="card-title text-primary">NAME:</h5>
+        <p><%= student.name.toUpperCase() %></p>
+      </div>
+
+      <div>
+        <h5 class="card-title text-primary">BATCH:</h5>
+        <p class="card-text"><%= student.batch %></p>
+      </div>
+
+      <div>
+      <h5 class="card-title text-primary">EMAIL:</h5>
+      <p class="card-text"><%= student.email %></p>
+   </div>
+
+   <div>
+      <h5 class="card-title text-primary">AGE:</h5>
+      <p class="card-text"><%= student.age %></p>
+   </div>
+
+   <div>
+      <h5 class="card-title text-primary">GENDER:</h5>
+      <p class="card-text"><%= student.gender %></p>
+   </div> 
+
+   <div>
+      <h5 class="card-title text-primary">COLLEGE:</h5>
+      <p class="card-text"><%= student.college %></p>
+   </div>  
+
+   <div>
+      <h5 class="card-title text-primary">PLACEMENT STATUS:</h5>
+      <p class="card-text"><%= student.status %></p>
+   </div>   
+
+   <div>
+      <h5 class="card-title text-primary">DSA SCORE:</h5>
+      <p class="card-text"><%= student.course_score.dsaScore %></p>
+   </div>   
+
+   <div>
+      <h5 class="card-title text-primary">WEB DEVELOPMENT SCORE:</h5>
+      <p class="card-text"><%= student.course_score.webDevScore %></p>
+   </div>   
+
+   <div>
+      <h5 class="card-title text-primary">REACT SCORE:</h5>
+      <p class="card-text"><%= student.course_score.reactScore %></p>
+   </div>   
+    </div>
+    <div class="card-footer bg-transparent border-info"></div>
+  </div>
+
+    <!-- Student Details Container Ends -->
+
+</div>
+
+<% } %>

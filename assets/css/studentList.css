@@ -1,0 +1,28 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.students-list-container .table {
+  position: absolute;
+  top: 270px;
+  left: 70px;
+  width: 1200px; }
+  .students-list-container .table tr, .students-list-container .table td {
+    text-align: center; }
+  .students-list-container .table td .view-detials-icon {
+    width: 30px;
+    height: 30px; }
+
+.add-student-btn {
+  position: relative;
+  top: 170px;
+  left: 1160px;
+  background-color: orangered;
+  border: none;
+  color: white; }
+
+.add-student-btn:hover {
+  background-color: green;
+  border: none;
+  color: white; }

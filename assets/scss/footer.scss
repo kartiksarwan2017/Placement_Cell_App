@@ -1,0 +1,27 @@
+#layout-footer{
+    color: white;
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(90deg, orange, yellow);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 200vh;
+
+    a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: green;
+    }
+   
+    .footer-nav{
+        ul{
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 100vw;
+}
+
+body{
+
+    background-image: url('../images/background-img1.webp');
+    width:97%;
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+
+    section{
+        margin-left: 10%;
+    
+
+    #heading{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        height: 15%;
+        width:90%;
+        padding: 2%;
+        font-family: cursive;
+        font-size: 30px;
+        background-color: rgb(101,85,120);
+        color: white;
+        display: inline-block;
+        
+    }
+
+    #card_content{
+        display: flex;
+        padding:10px;
+        margin-top: 5%;
+        width: 90%;
+        justify-content:space-between;
+        align-items: center;
+        background-color: rgb(255,255,255);
+
+        #apply{
+            text-decoration: none;
+        }
+        #apportunity {
+            display : flex;
+            padding:10px;
+            justify-content: space-between;
+            
+        }
+
+
+        #companyName{
+            font-size: 20px;
+            font-family:  'Arial';
+            font-weight: 100;
+            color: rgb(255,167,189);
+        }
+        #image{
+            margin: 10px;
+        }
+        p{
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        #content{
+            margin:10px;
+        }
+        span{
+            padding:5px;
+            color: grey;
+        }
+        #details >div {
+            padding: 5px;
+        }
+        #button_to_apply{
+            padding-right: 15%;
+        }
+        button{
+            font-size: 25px;
+            padding: 5px;
+            width: 150%;
+            border-radius: 41%;
+            border: 1px solid white;
+            background-color: grey;
+        }
+    }
+
+}
+}

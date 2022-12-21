@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="/css/all_interview.css" />
+
+<% if(locals.user) { %>
+
+<div class="all-interview-container">
+
+  <!-- All Interview Container Starts -->
+
+  <table class="table table-striped-columns table-hover table-bordered">
+    <tr>
+      <th>Company</th>
+      <th>Date</th>
+      <th>Profile</th>
+      <th>List Of Students</th>
+      <th>Schedule Interview</th>
+      <th>Delete Interview Slot</th>
+    </tr>
+    <% for(i of interview) { %>
+
+    <tr>
+      <td><%= i.companyName %></td>
+      <td><%= i.date %></td>
+      <td><%= i.profile %></td>
+      <td>
+        <a href="/student/show-all-students-details/<%= i._id %>">
+          <img
+            src="https://img.icons8.com/fluency/512/ingredients-list.png"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+        </a>
+      </td>
+      <td>
+        <a href="/interview/schedule-interview/<%= i._id %>">
+          <button type="button" class="btn btn-primary schedule-interview-btn">
+            Schedule Interview for <%= i.companyName%>/<%=i.profile%>
+          </button>
+        </a>
+      </td>
+      <td>
+        <% if(locals.student.id == i.student.id) { %>
+        <small>
+          <a href="/interview/destroy/<%= i.id%>">
+            <i class="fa-solid fa-trash-can fa-xl" style="color: red"></i>
+          </a>
+        </small>
+        <% } %>
+      </td>
+    </tr>
+    <% } %>
+  </table>
+
+  <br />
+
+  <a href="/interview/add-interview">
+    <button type="button" class="btn add-interview-btn">Add interview</button>
+  </a>
+
+    <!-- All Interview Container Ends -->
+    
+</div>
+
+<% } %>

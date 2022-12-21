@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/schedule_interview.css">
+
+<% if(locals.user) { %>
+
+<div class="schedule-interview-container">
+
+  <!-- Schedule Interview Container Starts -->
+
+  <form
+    action="/interview/add-student-interview/<%= interview[0]._id %>"
+    method="POST"
+    id="schedule-new-interview-form"
+    data-id="<%= interview[0]._id  %>"
+    class="form"
+  >
+    <div>
+      <h4>Company Name</h4>
+      <p><%= interview[0].companyName %></p>
+      <h4>Date Of Interview</h4>
+      <p><%= interview[0].date %></p>
+    </div>
+
+    <select name="student" id="student" class="form-select" aria-label="Default select example">
+      <option selected disabled>Add Student</option>    
+      <% for(stud of student) { %>     
+      <option value="<%= stud._id %>"><%= stud.name.toUpperCase() %></option>
+      <% } %>
+    </select>
+
+
+    <button type="submit" class="btn btn-primary" name="submit" id="submit">Schedule interview</button>
+
+  </form>
+
+    <!-- Schedule Interview Container Ends -->
+
+</div>
+
+<% } %>
+
+<script src="/js/schedule_interview.js"></script>

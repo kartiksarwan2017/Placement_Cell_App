@@ -1,0 +1,41 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+.all-students-container{
+
+    h4, p {
+        display: inline-block;
+        position: relative;
+        left: 120px;
+        top: 220px;
+    }
+
+    p{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .table{
+
+        position: relative;
+        top: 270px;
+        left: 110px;
+        width: 1100px;
+
+        th{
+            font-size: 18px;
+        }
+
+        td{
+            font-size: 18px;
+        }
+    
+        th, td{
+            text-align: center;
+        }
+
+    }
+}

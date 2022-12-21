@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/user_sign_up.css">
+
+<div class="sign-up-container">
+
+  <!-- Sign Up Container Starts -->
+
+<h1>Employee Sign Up</h1>
+<form class="form" action="/users/create" method="POST" id="new-sign-up-form">
+    <label for="name">
+      <span>Name</span>
+      <input type="text" name="name" placeholder="Enter Your Name" required>
+    </label>
+
+    <label for="email">
+      <span>Email Address</span>
+      <input type="email" name="email" placeholder="Enter Your Email" required>
+    </label>
+
+    <label for="password">
+      <span>Password</span>
+      <input type="password" name="password" placeholder="Enter Your Password" required>
+    </label>
+
+    <label for="confirm_password">
+      <span>Confirm Password</span>
+      <input type="password" name="confirm_password" placeholder="Confirm Your Password" required>
+    </label>
+
+    <button type="submit" class="submit" type="button">Sign Up</button>
+    <a  id="account" href="/users/sign-in">Already have an Account?</a>
+
+</form>
+
+<div class="social-media">
+    <ul>
+      <li>
+        <a href="/users/auth/google">
+          <img id="google-logo" src="/images/google-logo.jpg" alt="google-logo">
+        </a>
+      </li>
+      <li>
+        <a href="/users/auth/github">
+          <img id="github-logo" src="/images/github-icon.png" alt="github-logo">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    <!-- Sign Up Container Ends -->
+
+</div>

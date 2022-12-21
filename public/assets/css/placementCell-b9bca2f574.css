@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 100vw; }
+
+body {
+  background-image: url("../images/background-img1.webp");
+  width: 97%;
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+  body section {
+    margin-left: 10%; }
+    body section #heading {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      height: 15%;
+      width: 90%;
+      padding: 2%;
+      font-family: cursive;
+      font-size: 30px;
+      background-color: #655578;
+      color: white;
+      display: inline-block; }
+    body section #card_content {
+      display: flex;
+      padding: 10px;
+      margin-top: 5%;
+      width: 90%;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white; }
+      body section #card_content #apply {
+        text-decoration: none; }
+      body section #card_content #apportunity {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between; }
+      body section #card_content #companyName {
+        font-size: 20px;
+        font-family: 'Arial';
+        font-weight: 100;
+        color: #ffa7bd; }
+      body section #card_content #image {
+        margin: 10px; }
+      body section #card_content p {
+        font-size: 30px;
+        font-family: sans-serif; }
+      body section #card_content #content {
+        margin: 10px; }
+      body section #card_content span {
+        padding: 5px;
+        color: grey; }
+      body section #card_content #details > div {
+        padding: 5px; }
+      body section #card_content #button_to_apply {
+        padding-right: 15%; }
+      body section #card_content button {
+        font-size: 25px;
+        padding: 5px;
+        width: 150%;
+        border-radius: 41%;
+        border: 1px solid white;
+        background-color: grey; }

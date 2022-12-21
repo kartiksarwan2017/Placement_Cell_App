@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="/css/add_Interview.css" />
+
+<div class="add-interview-container">
+
+  <!-- Add Interview Container Starts -->
+
+  <% if(locals.user) { %>
+
+  <h1>Add Interview</h1>
+
+  <form
+    action="/interview/create-interview"
+    method="POST"
+    id="new-interview-form"
+  >
+    <div class="col-md-4 mb-3 input-container">
+      <label for="company_name">Company Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="company_name"
+        name="company_name"
+        placeholder="Enter Company Name"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="profile">Profile</label>
+      <input
+        type="text"
+        class="form-control"
+        id="profile"
+        name="profile"
+        placeholder="Enter Profile"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="date">Date of Interview</label>
+      <input
+        type="date"
+        class="form-control"
+        id="date"
+        name="interview_date"
+        required
+      />
+    </div>
+
+    <div class="input-container">
+      <button type="submit" class="btn btn-primary btn-lg add-interview-btn">
+        Add Interview
+      </button>
+    </div>
+  </form>
+
+  <% } %>
+
+    <!-- Add Interview Container Ends -->
+
+</div>
+
+<script src="/js/add_interview.js"></script>

@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="/css/edit_student.css" />
+
+<% if(locals.user) { %>
+
+<div class="edit-student-details-container">
+
+  <!-- Edit Student Details Container Starts -->
+
+  <h1>Edit Student</h1>
+
+  <form
+    action="/student/update-student-details/<%= student._id %>"
+    method="POST"
+  >
+    <div class="col-md-4 mb-3 input-container">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+        value="<%= student.name %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="batch">Batch</label>
+      <input
+        type="text"
+        class="form-control"
+        id="batch"
+        name="batch"
+        placeholder="Enter Batch"
+        value="<%= student.batch %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter Email"
+        value="<%= student.email %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="age">Age</label>
+      <input
+        type="text"
+        name="age"
+        class="form-control"
+        id="age"
+        placeholder="Enter Age"
+        value="<%= student.age %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="gender">Gender</label>
+      <input
+        type="text"
+        class="form-control"
+        id="gender"
+        name="gender"
+        placeholder="Enter Gender"
+        value="<%= student.gender %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="college">College</label>
+      <input
+        type="text"
+        class="form-control"
+        id="college"
+        name="college"
+        placeholder="Enter College Name"
+        value="<%= student.college %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="status" style="margin-right: 20px">Placement Status</label>
+      <select
+        class="custom-select custom-select-lg mb-3 mt-3"
+        id="status"
+        name="status"
+      >
+        <option selected disabled>Placement Status</option>
+        <option value="Placed">Placed</option>
+        <option value="Not Placed">Not Placed</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="dsaScore">DSA Score</label>
+      <input
+        type="number"
+        class="form-control"
+        id="dsaScore"
+        name="dsaScore"
+        placeholder="Enter DSA Score"
+        value="<%= student.course_score.dsaScore %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="webDevScore">Web Development Score</label>
+      <input
+        type="number"
+        class="form-control"
+        id="webDevScore"
+        name="webDevScore"
+        placeholder="Enter WebDev Score"
+        value="<%= student.course_score.webDevScore %>"
+        required
+      />
+    </div>
+
+    <div class="col-md-4 mb-3 input-container">
+      <label for="reactScore">React Score</label>
+      <input
+        type="number"
+        class="form-control"
+        id="reactScore"
+        name="reactScore"
+        placeholder="Enter React Score"
+        value="<%= student.course_score.reactScore %>"
+        required
+      />
+    </div>
+
+    <div class="input-container">
+      <button type="submit" class="btn btn-primary btn-lg">
+        Update Student
+      </button>
+    </div>
+  </form>
+
+  <!-- Edit Student Details Container Ends -->
+  
+</div>
+
+<% } %>

@@ -1,0 +1,62 @@
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6214/6214076.png">
+<link rel="stylesheet" href="/css/placementCell.css">
+
+<title><%= title %></title>
+
+<!-- content -->
+<section class="placement-cell-container">
+
+    <!-- Placement Cell Container Starts -->
+
+    <div id="heading">
+        <h1>Introducing Placement Cell</h1>
+    </div>
+    
+    <% for(var i=0 ; i < body.length ; i++) { %>
+        <div id="card_content">
+            <!-- part1 -->
+            <div id="apportunity">
+                <!-- part2 -->
+                <div id="image"><img src="<%= body[i].company_logo %>"></div>
+                <div id="content">
+                    <p>
+                        <%= body[i].title %>
+                    </p>
+                    <p id="companyName">
+                        <%=body[i].company_name %>
+                    </p>
+                    <div id="details">
+                        <div>
+                            <span>JobType &nbsp </span>
+                            <%= body[i].job_type %>
+                                <span>Application Publication&nbsp</span>
+                                <%= body[i].publication_date %>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <span>Location &nbsp</span>
+                            <%= body[i].candidate_required_location %>
+                                <% if(body[i].salary.length>0) { %>
+                                    <span>Salary &nbsp</span>
+                                    <%= body[i].salary %>
+                                        <%}else { %>
+                                            <span>Salary &nbsp</span> candidate performance in Interview
+                                            <%}%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="button_to_apply">
+                <button>
+                    <a id="apply" href="<%= body[i].url %>" target="_blank">Apply</a>
+                </button>
+            </div>
+
+        </div>
+
+        <% } %>
+
+    <!-- Placement Container Ends -->
+
+</section>

@@ -1,0 +1,97 @@
+.header-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(90deg, orange, yellow);
+
+    .nav-container{
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        left: 15px;
+        img{
+            width: 70px;
+        }
+    }
+
+    .nav-links-container{
+        list-style: none;
+        display: inline-block;
+
+        .dropdown{
+            display: inline-block;
+            position: absolute;
+        }
+
+
+        .btn{
+            background-color: orangered;
+            border: none;
+            color: white;
+        }
+
+        .btn:hover{
+            background-color: green;
+        }
+
+        
+        .students-drop-down-btn{
+            position: relative;
+            left: 250px;
+            bottom: 28px;
+
+        }
+
+        #interview-drop-down-btn{
+            position: relative;
+            left: 320px;
+            bottom: 50px;
+            background-color: orangered;
+            border: none;
+            
+        }
+
+        #interview-drop-down-btn:hover{
+            background-color: green;
+        }
+
+
+        .job-portal-btn{
+            position: relative;
+            left: 500px;
+            bottom: 28px;
+        }
+                    
+        .download-csv-btn{
+            position: relative;
+            left: 570px;
+            bottom: 30px;
+        }
+
+
+        .nav-link{
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 20px;
+            position: relative;
+            left: 42rem;
+            bottom: 30px;
+            margin-left: 10px;
+    
+        }
+
+        .nav-links{
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 20px;
+            position: relative;
+            left: 65rem;
+            bottom: 30px;
+            margin-left: 10px;
+        }
+
+   
+    }
+}
+

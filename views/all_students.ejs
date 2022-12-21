@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="/css/all_students.css" />
+
+<% if(locals.user) { %>
+
+<div class="all-students-container">
+
+  <!-- All Students Container Starts -->
+
+  <h4>Company Name:</h4>
+  <p class="text-primary"><%= Interview_company %></p>
+
+  <br />
+
+  <h4>Interview Date:</h4>
+  <p class="text-primary"><%= Date %></p>
+
+  <table
+    border="1"
+    class="table table-hover table-striped table-light table-bordered"
+  >
+    <tr>
+      <th rowspan="2">Name</th>
+      <th>Result</th>
+      <th colspan="2" rowspan="2">Update Result</th>
+      <th rowspan="2">Delete Student</th>
+    </tr>
+    <tr>
+      <td>[Selected, Not Selected, Interview Pending, Absent]</td>
+    </tr>
+
+    <% for(student of students){ %>
+    <tr>
+      <td><%= student.name %></td>
+      <form
+        action="/interview/save-result/<%= id%>/<%= student._id %>"
+        method="POST"
+      >
+        <td>
+            
+          <% let data = "" %> 
+
+            <% for(let j=0; j < result.length; j++) { %> 
+
+            <% if((result[j].student._id.equals(student._id))) { %> 
+            
+            <% data = result[j].result; %> 
+            
+            <% } %> 
+
+         <% } %>
+
+          <span><%= data %></span>
+        </td>
+
+        <td>
+          <input type="hidden" name="student" value="<%= student._id %>" />
+          <select
+            name="resultStatus"
+            id="select-result"
+            class="form-select form-select-md mb-2 rounded-2"
+          >
+            <option value="" disabled selected>Result</option>
+            <option value="Selected">Selected</option>
+            <option value="Not Selected">Not Selected</option>
+            <option value="Absent">Absent</option>
+            <option value="Interview Pending">Interview Pending</option>
+          </select>
+        </td>
+
+        <td>
+          <button type="submit" name="submit" class="btn btn-primary">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </td>
+
+        <td>
+          <button type="button" class="btn btn-light">
+            <a href="/interview/delete-student/<%=id%>">
+              <i class="fa-solid fa-trash-can fa-lg" style="color: red"></i>
+            </a>
+          </button>
+        </td>
+      </form>
+    </tr>
+    <% } %>
+  </table>
+
+    <!-- All Students Container Ends -->
+
+</div>
+
+<% } %>

@@ -1,0 +1,24 @@
+<footer id="layout-footer">
+  <!-- Footer Starts -->
+  <div>
+    <h4>Team Career Camp</h4>
+  </div>
+
+  <div>
+    <% if(locals.user) { %>
+    <nav class="footer-nav">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/users/profile/<%= locals.user.id %>">Profile</a>
+        </li>
+      </ul>
+    </nav>
+    <% } %>
+  </div>
+
+  <!-- Footer Ends -->
+
+</footer>

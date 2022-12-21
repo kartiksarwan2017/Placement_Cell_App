@@ -1,0 +1,16 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.students-details-container .table {
+  position: relative;
+  width: 1250px;
+  left: 40px;
+  top: 250px; }
+  .students-details-container .table th, .students-details-container .table td {
+    text-align: center; }
+  .students-details-container .table th {
+    font-size: 18px; }
+  .students-details-container .table td {
+    font-size: 16px; }

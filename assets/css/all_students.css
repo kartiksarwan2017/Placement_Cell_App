@@ -1,0 +1,26 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.all-students-container h4, .all-students-container p {
+  display: inline-block;
+  position: relative;
+  left: 120px;
+  top: 220px; }
+
+.all-students-container p {
+  font-size: 20px;
+  margin-left: 10px; }
+
+.all-students-container .table {
+  position: relative;
+  top: 270px;
+  left: 110px;
+  width: 1100px; }
+  .all-students-container .table th {
+    font-size: 18px; }
+  .all-students-container .table td {
+    font-size: 18px; }
+  .all-students-container .table th, .all-students-container .table td {
+    text-align: center; }

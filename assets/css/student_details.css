@@ -1,0 +1,30 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.student-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .student-details-container h1 {
+    position: relative;
+    top: 250px; }
+  .student-details-container .card {
+    display: inline-block;
+    position: relative;
+    top: 300px;
+    width: 700px; }
+    .student-details-container .card .card-header .edit-btn {
+      position: relative;
+      left: 620px; }
+    .student-details-container .card .card-body {
+      padding: 20px; }
+      .student-details-container .card .card-body div {
+        display: flex;
+        flex-direction: row;
+        padding: 7px; }
+        .student-details-container .card .card-body div p {
+          font-size: 20px;
+          position: absolute;
+          left: 350px; }

@@ -1,0 +1,28 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.schedule-interview-container .form {
+  position: relative;
+  top: 250px;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  flex-wrap: wrap; }
+  .schedule-interview-container .form div p {
+    font-size: 20px;
+    position: relative;
+    color: blue;
+    left: 20px; }
+  .schedule-interview-container .form .form-select {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 400px; }
+  .schedule-interview-container .form button {
+    position: relative;
+    left: 70px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 10px; }

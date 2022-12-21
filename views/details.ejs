@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="/css/details.css" />
+
+<% if(locals.user) { %>
+
+<div class="students-details-container">
+
+  <!-- Students Details Container Starts -->
+
+  <table
+    border="1"
+    class="table table-striped table-hover table-info table-bordered"
+  >
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>College</th>
+      <th>Status</th>
+      <th>DSA Score</th>
+      <th>WebDev Score</th>
+      <th>React Score</th>
+      <th>Company Name</th>
+      <th>Profile</th>
+      <th>Date</th>
+      <th>Result</th>
+    </tr>
+
+    <% for(stu of student){ %> 
+      <% let i = stu.interview.length - 1 %> 
+      <% while(i >= 0) { %>
+        
+    <tr>
+      <td><%= stu.name%></td>
+      <td><%= stu.email %></td>
+      <td><%= stu.age%></td>
+      <td><%= stu.gender%></td>
+      <td><%= stu.college%></td>
+      <td><%= stu.status %></td>
+      <td><%= stu.course_score.dsaScore%></td>
+      <td><%= stu.course_score.webDevScore%></td>
+      <td><%= stu.course_score.reactScore%></td>
+      <td><%= stu.interview[i].companyName.toUpperCase()%></td>
+      <td><%= stu.interview[i].profile%></td>
+      <td><%= stu.interview[i].date%></td>
+
+      <% let data = "" %> 
+            
+        <% for(let j=0; j < result.length; j++) { %> 
+          <% if((result[j].student._id.equals(stu._id)) && (result[j].interview._id.equals(stu.interview[i]._id))) { %> 
+        
+          <% data = result[j].result; %> <% } %> 
+        <% } %>
+
+      <td><%= data %></td>
+
+    </tr>
+
+    <% i--; %> 
+    <% } %> 
+    <% } %>
+  </table>
+
+    <!-- Students Details Container Ends -->
+    
+</div>
+
+<% } %>

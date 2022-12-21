@@ -1,0 +1,55 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+
+.student-details-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        position: relative;
+        top: 250px;
+    }
+
+    .card{
+
+        display: inline-block;
+        position: relative;
+        top: 300px;
+        width: 700px;
+
+
+        .card-header{
+         
+            .edit-btn{
+
+                position: relative;
+                left: 620px;
+                
+            }
+        }
+
+
+        .card-body{
+            padding: 20px;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                padding: 7px;
+
+                p{
+                    font-size: 20px;
+                    position: absolute;
+                    left: 350px;
+                }
+            }
+        }
+     
+    }
+}

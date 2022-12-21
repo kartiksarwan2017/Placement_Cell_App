@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/user_sign_in.css">
+
+<div class="sign-in-container">
+
+  <!-- Sign In Container Starts  -->
+
+<h1>Employee Sign In</h1>
+
+<form class="form" action="/users/create-session" method="POST">
+  
+    <label for="email">
+      <span>Email Address</span> 
+      <input type="email" name="email" placeholder="Enter Your Email" required>
+    </label>
+
+    <label for="password">
+      <span>Password</span>
+      <input type="password" name="password" placeholder="Enter Your Password" required>
+    </label>
+
+    <button type="submit" class="submit">Sign In</button>
+
+    <a id="account" href="/users/sign-up">Don't Have an Account?</a>
+
+</form>
+
+<div class="social-media">
+    <ul>
+      <li>
+        <a href="/users/auth/google">
+          <img id="google-logo" src="/images/google-logo.jpg" alt="google-logo">
+        </a>
+      </li>
+      <li>
+        <a href="/users/auth/github">
+          <img id="github-logo" src="/images/github-icon.png" alt="github-logo">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    <!-- Sign In Container Ends  -->
+
+</div>  

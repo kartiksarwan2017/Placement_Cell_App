@@ -1,0 +1,126 @@
+<header>
+  <div class="header-container">
+
+    <!-- Header Container Starts -->
+
+    <div class="nav-container">
+      <a href="/">
+        <img
+          src="https://www.jobkraft.in/wp-content/uploads/2021/12/services-style-11-1.png"
+          alt="nav-logo"
+        />
+      </a>
+    </div>
+
+    <ul>
+      <% if(locals.user) { %>
+
+      <li class="nav-links-container">
+        <div class="btn-group">
+          <button
+            class="btn dropdown-toggle students-drop-down-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Students
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/student/add-student">
+                <button type="button" class="btn">Add Student</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/student/student-details-list">
+                <button type="button" class="btn">List Of Students</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/interview/list-interview-page">
+                <button type="button" class="btn">List of Interviews</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/student/all-details">
+                <button type="button" class="btn">List all details</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-links-container">
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="interview-drop-down-btn"
+            aria-expanded="false"
+          >
+            Interviews
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/interview/add-interview">
+                <button type="button" class="btn">Add Interview</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/student/student-details-list">
+                <button type="button" class="btn">List Of Students</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/interview/list-interview-page">
+                <button type="button" class="btn">List of Interviews</button>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/student/all-details">
+                <button type="button" class="btn">List all details</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-links-container">
+        <a href="/jobs/list" target="_blank">
+          <button type="button" class="btn job-portal-btn">Job Portal</button>
+        </a>
+      </li>
+
+      <li class="nav-links-container">
+        <a href="/csv/downloadcsv">
+          <button type="button" class="btn download-csv-btn">
+            Download Report
+          </button>
+        </a>
+      </li>
+
+      <li class="nav-links-container">
+        <a class="nav-link" href="/users/profile/<%= locals.user.id %>">
+          <%= user.name %>
+        </a>
+      </li>
+      <li class="nav-links-container">
+        <a class="nav-link" href="/users/sign-out">Sign Out</a>
+      </li>
+
+      <% } else { %>
+
+      <li class="nav-links-container">
+        <a class="nav-links" href="/users/sign-in">Sign In</a>
+      </li>
+
+      <li class="nav-links-container">
+        <a class="nav-links" href="/users/sign-up">Sign Up</a>
+      </li>
+
+      <% } %>
+    </ul>
+     <!-- Header Container Ends -->
+  </div>
+</header>

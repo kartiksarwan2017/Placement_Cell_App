@@ -1,0 +1,1 @@
+(async function(){let e=$("#new-student-form");e.submit((function(t){t.preventDefault(),$.ajax({type:"post",url:"/student/create-student",data:e.serialize(),success:function(e){console.log(e),new Noty({theme:"relax",text:"Student Added Sucessfully!",type:"success",layout:"topRight",timeout:1500}).show()},error:function(e){console.log(e.responseText)}})}))})();

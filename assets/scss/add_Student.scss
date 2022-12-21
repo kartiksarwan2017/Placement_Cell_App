@@ -1,0 +1,49 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+.add-student-container{
+    position: absolute;
+    display: inline-block;
+
+    h1{
+        display: inline-block;   
+        position: relative;
+        left: 540px; 
+        top: 170px;   
+    }
+
+    form{
+        position: relative;
+        top: 230px;
+        left: 450px;
+        display: flex;
+        max-width: 500px;
+        flex-wrap: wrap;
+
+        .input-container{
+            display: inline-block;
+            width: 400px;
+
+            label{
+                font-size: 20px;
+                margin-bottom: 12px;        
+            }
+
+            .add-student-btn{
+                margin-top: 20px;
+            }
+
+            .add-student-btn:hover{
+                background-color: green;
+            }
+        }
+    }
+    
+}
+
+#layout-footer{
+    margin-top: 40vh;
+}

@@ -1,0 +1,23 @@
+{
+  "css/add_Interview.css": "css/add_Interview-4fb782ff75.css",
+  "css/add_Student.css": "css/add_Student-fa9760069b.css",
+  "css/all_interview.css": "css/all_interview-457af9abde.css",
+  "css/all_interview.css.css": "css/all_interview-d41d8cd98f.css.css",
+  "css/all_students.css": "css/all_students-6fa586f4ce.css",
+  "css/details.css": "css/details-2812c05cb6.css",
+  "css/edit_student.css": "css/edit_student-4070472bd7.css",
+  "css/footer.css": "css/footer-de74eb29ab.css",
+  "css/header.css": "css/header-437fa5cf91.css",
+  "css/home.css": "css/home-e81221d270.css",
+  "css/layout.css": "css/layout-2c39bfb2c0.css",
+  "css/placementCell.css": "css/placementCell-b9bca2f574.css",
+  "css/profile.css": "css/profile-d6c791cc08.css",
+  "css/schedule_interview.css": "css/schedule_interview-5e488f8c91.css",
+  "css/studentList.css": "css/studentList-d1e4e30a56.css",
+  "css/student_details.css": "css/student_details-43a6067c19.css",
+  "css/user_sign_in.css": "css/user_sign_in-34f6b8eb5f.css",
+  "css/user_sign_up.css": "css/user_sign_up-83909b1833.css",
+  "js/add_interview.js": "js/add_interview-a8986a015d.js",
+  "js/add_student.js": "js/add_student-a71344d4c2.js",
+  "js/schedule_interview.js": "js/schedule_interview-8d0e8cccae.js"
+}

@@ -1,0 +1,46 @@
+body{
+    background-image: url('../images/background-img.jpg');
+    background-size:  100% 100vh;
+    background-repeat: repeat-y;
+}
+
+.edit-student-details-container{
+    position: absolute;
+    display: inline-block;
+
+    h1{
+        display: inline-block;   
+        position: relative;
+        left: 540px; 
+        top: 180px;   
+    }
+
+    form{
+        position: relative;
+        top: 225px;
+        left: 450px;
+        display: flex;
+        max-width: 500px;
+        flex-wrap: wrap;
+
+        .input-container{
+            display: inline-block;
+            width: 400px;
+
+            label{
+                font-size: 20px;
+                margin-bottom: 10px;        
+            }
+
+            button{
+                margin-top: 20px;
+            }
+        }
+    }
+    
+}
+
+
+#layout-footer{
+    margin-top: 40vh;
+}

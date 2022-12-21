@@ -1,0 +1,48 @@
+body {
+  background-image: url("../images/background-img.jpg");
+  background-size: 100% 100vh;
+  background-repeat: repeat-y; }
+
+.profile-container {
+  position: absolute; }
+  .profile-container .back-btn {
+    background-color: white;
+    border-radius: 15px;
+    width: 40px;
+    border: none;
+    position: relative;
+    left: 250px;
+    bottom: 70px; }
+    .profile-container .back-btn .fa-circle-arrow-left {
+      color: orangered;
+      position: relative;
+      right: 10px; }
+  .profile-container .fa-circle-arrow-left:hover {
+    color: green; }
+  .profile-container .back-btn:hover {
+    color: green; }
+  .profile-container .card {
+    display: inline-block;
+    position: relative;
+    width: 700px;
+    top: 250px;
+    left: 380px;
+    bottom: 500px;
+    border-radius: 12px; }
+    .profile-container .card .card-main {
+      height: 240px; }
+      .profile-container .card .card-main .profile-img {
+        height: 240px; }
+      .profile-container .card .card-main .card-body {
+        position: relative;
+        left: 20px;
+        top: 20px; }
+        .profile-container .card .card-main .card-body .card-text {
+          font-size: 20px;
+          color: blue; }
+    .profile-container .card .edit-profile-btn {
+      position: relative;
+      left: 450px; }
+
+#layout-footer {
+  margin-top: -80vh; }
