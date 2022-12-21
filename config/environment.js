@@ -36,9 +36,9 @@ const production = {
     google_client_ID: process.env.PLACEMENT_CELL_GOOGLE_CLIENT_ID,
     google_client_Secret: process.env.PLACEMENT_CELL_GOOGLE_CLIENT_SECRET,
     google_callbackURL: process.env.PLACEMENT_CELL_PRODUCTION_GOOGLE_CALLBACK_URL,
-    github_client_ID: process.env.PLACEMENT_CELL_GITHUB_CLIENT_ID,
-    github_client_Secret: process.env.PLACEMENT_CELL_GITHUB_CLIENT_SECRET,
-    github_callbackURL: process.env.PLACEMENT_CELL_GITHUB_CALLBACK_URL,
+    github_client_ID: process.env.PLACEMENT_CELL_GITHUB_PRODUCTION_CLIENT_ID,
+    github_client_Secret: process.env.PLACEMENT_CELL_GITHUB_PRODUCTION_CLIENT_SECRET,
+    github_callbackURL: process.env.PLACEMENT_CELL_GITHUB_PRODUCTION_CALLBACK_URL,
     morgan: {
         mode: 'combined',
         options: {stream: accessLogStream}
