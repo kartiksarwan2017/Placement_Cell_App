@@ -17,7 +17,7 @@ const development = {
     session_cookie_key: process.env.PLACEMENT_CELL_SESSION_COOKIE_KEY,
     google_client_ID: process.env.PLACEMENT_CELL_GOOGLE_CLIENT_ID,
     google_client_Secret: process.env.PLACEMENT_CELL_DEVELOPMENT_GOOGLE_CLIENT_SECRET,
-    google_callbackURL: process.env.PLACEMENT_CELL_DEVELOPMENT_DEVELOPMENT_GOOGLE_CALLBACK_URL,
+    google_callbackURL: process.env.PLACEMENT_CELL_DEVELOPMENT_GOOGLE_CALLBACK_URL,
     github_client_ID: process.env.PLACEMENT_CELL_GITHUB_CLIENT_ID,
     github_client_Secret: process.env.PLACEMENT_CELL_GITHUB_CLIENT_SECRET,
     github_callbackURL: process.env.PLACEMENT_CELL_GITHUB_CALLBACK_URL,
