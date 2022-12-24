@@ -152,8 +152,11 @@ Methods          POST
 // get the sign up data
 module.exports.create = async (req, res) => {
   try {
+
+    // console.log(req.body);
     // check if the password and confirm password are same or not
     if (req.body.password != req.body.confirm_password) {
+      req.flash('error', "Password doesn't match!");
       return res.redirect("back");
     }
 
@@ -162,18 +165,22 @@ module.exports.create = async (req, res) => {
       let user = await User.findOne({ email: req.body.email });
 
       if (!user) {
-        await User.create(req.body, function (err, user) {
+       await User.create(req.body, function (err, user) {
           if (err) {
-            console.log("error in creating user while signing up");
+            console.log("error in creating user while signing up", err);
             return;
           }
 
+          req.flash('success', 'Signed Up Successfully!!');
           return res.redirect("/users/sign-in");
         });
+
       } else {
+        req.flash('error', 'You have already signed up, login to continue!');
         return res.redirect("back");
       }
     } catch (err) {
+ 
       console.log("error in finding user in signing up", err);
       return;
     }
